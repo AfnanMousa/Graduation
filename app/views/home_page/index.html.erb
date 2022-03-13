@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+        <html lang="en-US" data-website-id="1" data-main-object="ir.ui.view(2341,)" data-oe-company-name="Odoo S.A." data-add2cart-redirect="1">
+
+    <head>
+                <meta charset="utf-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <title> Login | Odoo </title>
+                <link type="image/x-icon" rel="shortcut icon" href="//odoocdn.com/web/image/website/1/favicon?unique=ffdde0a"/>
+            
+            <link type="text/css" rel="stylesheet" href="//odoocdn.com/web/assets/32351606-6dbf977/1/web.assets_common.min.css" data-asset-bundle="web.assets_common" data-asset-version="6dbf977"/>
+            <link type="text/css" rel="stylesheet" href="//odoocdn.com/web/assets/32351722-440aa86/1/web.assets_frontend.min.css" data-asset-bundle="web.assets_frontend" data-asset-version="440aa86"/>
+                <%
+=begin%>
+ <script id="web.layout.odooscript" type="text/javascript">
+                    var odoo = {
+                        csrf_token: "ed5dda96688d43b16ea0f0d362d48e1a21b22d87o1678714356",
+                        debug: "",
+                    };
+                </script> 
+<%
+=end%>
+            <script type="text/javascript">
+                odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "translationURL": "/website/translations", "cache_hashes": {"translations": "7cfab8c701cc082b0438701b8f80a92b377c8231"}, "geoip_country_code": "EG"};
+                if (!/(^|;\s)tz=/.test(document.cookie)) {
+                    const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    document.cookie = `tz=${userTZ}; path=/`;
+                }
+            </script>
+            <script defer="defer" type="text/javascript" src="//odoocdn.com/web/assets/32320239-1f2e3c5/1/web.assets_common_minimal.min.js" data-asset-bundle="web.assets_common_minimal" data-asset-version="1f2e3c5"></script>
+            <script defer="defer" type="text/javascript" src="//odoocdn.com/web/assets/32320240-fca4199/1/web.assets_frontend_minimal.min.js" data-asset-bundle="web.assets_frontend_minimal" data-asset-version="fca4199"></script>
+            <script defer="defer" type="text/javascript" data-src="//odoocdn.com/web/assets/32351585-43b027b/1/web.assets_common_lazy.min.js" data-asset-bundle="web.assets_common_lazy" data-asset-version="43b027b"></script>
+            <script defer="defer" type="text/javascript" data-src="//odoocdn.com/web/assets/32351737-6346541/1/web.assets_frontend_lazy.min.js" data-asset-bundle="web.assets_frontend_lazy" data-asset-version="6346541"></script>
+            <noscript>
+                <style>
+                    /* Prevent animated elements hiding */
+                    .o_animate_in_children > * {
+                        opacity: 1!important;
+                        -webkit-transform: scale(1)!important;
+                        -ms-transform: scale(1)!important;
+                        transform: scale(1)!important;
+                    }
+                </style>
+            </noscript>
+    </head>
+            <body class="">
+        <div id="wrapwrap" class="    o_login ">
+    <header id="top" data-anchor="true" data-name="Header" class="  o_no_autohide_menu o_affix_enabled o_header_fixed o_main_header o_not_editable">
+    <div class="o_main_header_main" id="top_menu">
+    
+                
+
+                <a href="#" role="button" class="o_mobile_menu_toggle o_no_ripple d-inline-block d-md-none">
+                    <i class="fa fa-bars" focusable="false"></i><span class="sr-only">Menu</span>
+                </a>
+                <div class="o_header_buttons">
+                    <a href="/shop/cart" aria-label="Shopping Cart" class="o_wsale_my_cart d-none">
+                        <i class="fa fa-shopping-cart"></i><sup class="my_cart_quantity badge badge-primary"></sup>
+                    </a>
+            
+    </header>
+            <main>
+            <div class="d-flex justify-content-center">
+            <div class="oe_website_login_container flex-grow-1 card mt-5 shadow" style="max-width: 350px;">
+               <span class="o_logo d-block mx-auto mb8 mt32">
+               
+               <%
+=begin%>
+ <%= image_tag("monkey.jpg", :alt => "rss feed", :size => "94*30") %>
+               can here change the logo  
+<%
+=end%>
+               
+               </span>
+                <div class="card-body">
+          <div class="alert alert-info text-center">
+            <p>Access and manage your instances from this جامد جموده account.</p>
+          </div>
+        <form class="oe_login_form o_odoo_enterprise_sign" role="form" method="post" onsubmit="this.action = &#39;/web/login&#39; + location.hash" action="/web/login">
+                <input type="hidden" name="csrf_token" value="ed5dda96688d43b16ea0f0d362d48e1a21b22d87o1678714356"/>
+                <div class="form-group field-login">
+                    <label for="login">Email</label>
+                    <input type="text" placeholder="Email" name="login" id="login" required="required" autofocus="autofocus" autocapitalize="off" class="form-control "/>
+                </div>
+                <div class="form-group field-name">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" class="form-control form-control-sm" placeholder="e.g. John Doe" required="required">
+                </div>
+                <div class="form-group field-password odoo-password-reveal">
+                        <label for="password" class="col-form-label" >Password</label>
+                        <div class="input-group">
+                            <input type="password" id="password" class="form-control" required="required" name="password"/>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button" style="background-color: #017e84; border-color: #017e84;">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                <div class="clearfix oe_login_buttons text-center mb-1 pt-3">
+                    <button type="submit" class="btn btn-primary float-left" >Sign up</button>
+                    <div class="justify-content-between mt-2 d-flex small">
+                        <a class="btn btn-link float-right" href="/web/login" data-original-title="" title="">I already have an account</a>
+                    </div>
+                    <div class="o_login_auth"></div>
+                </div>
+                <input type="hidden" name="redirect"/>
+        </form>
+        <div class="col-auto text-muted mt8 mb16" style="line-height: 1.0;">
+            <small>
+            <i class="fa fa-info-circle"></i>
+            We will handle your personal data as described in our
+            <a href="/privacy" target="_blank" class="text-muted">Privacy Policy</a>.
+            </small>
+        </div>
+        </div>
+            </div>
+        </div>
+        </main>
+                
+        </div>
+        <script type="text/javascript">
+          _linkedin_partner_id = "586737";
+          window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+          window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        </script>
+        <script type="text/javascript">
+          (function(){var s = document.getElementsByTagName("script")[0];
+          var b = document.createElement("script");
+          b.type = "text/javascript";
+          b.async = true;
+          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+          s.parentNode.insertBefore(b, s);})();
+        </script>
+            <script>
+                window.addEventListener('load', function () {
+                    odoo.define('im_livechat.livesupport', function (require) {
+                    });
+                });
+            </script>
+    </body>
+</html>
