@@ -9,4 +9,7 @@ class HomePageController < ApplicationController
     def resetPassword
     end
 
+    def index
+    end
+
 end

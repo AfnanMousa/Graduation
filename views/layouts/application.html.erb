@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <%
+=begin%>
+ <link type="text/css" rel="stylesheet" href="C:\Users\Lenovo\Documents\RubyOnRails\myProjects\demo\app\assets\stylesheets\web.assets_common.min.css" data-asset-bundle="web.assets_common" data-asset-version="9511c66">
+    <link type="text/css" rel="stylesheet" href="C:\Users\Lenovo\Documents\RubyOnRails\myProjects\demo\app\assets\stylesheets\web.assets_backend.min.css" data-asset-bundle="web.assets_backend" data-asset-version="dd679e9"> 
+<%
+=end%>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

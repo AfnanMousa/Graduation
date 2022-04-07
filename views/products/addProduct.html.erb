@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Inventory Overview</title>
+    <script src="https://kit.fontawesome.com/9889287a30.js" crossorigin="anonymous"></script>
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="o_web_client">
+
+    <header>
+        <nav data-command-category="navbar" class="o_main_navbar"
+            style="background-color: #626774;border-color: #626774;"><a href="#" accesskey="h"
+                class="fa-solid fa-table-cells" title="Home menu" aria-label="Home menu"></a><a href="#menu_id=108"
+                class="dropdown-item o_menu_brand" data-section="108"
+                data-menu-xmlid="stock.menu_stock_root">Inventory</a>
+            <div role="menu" class="o_menu_sections">
+                <a href="#menu_id=137" title="Overview" data-hotkey="1" class="dropdown-item o_nav_entry"
+                    data-section="137" data-menu-xmlid="stock.stock_picking_type_menu">Overview</a>
+
+                <div class="o-dropdown dropdown o-dropdown--no-caret">
+                    <button class="dropdown-toggle  " title="Operations" data-hotkey="2"
+                        data-menu-xmlid="stock.menu_stock_warehouse_mgmt">
+                        <div class="dropdown1">
+                            <span data-section="109">Operations</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="login" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="o-dropdown dropdown o-dropdown--no-caret">
+                    <button class="dropdown-toggle  " title="Products" data-hotkey="3"
+                        data-menu-xmlid="stock.menu_stock_inventory_control">
+                        <div class="dropdown1">
+                            <span data-section="120">Products</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="productPage" class=" focus dropdown-item ">Product Page</a></div>
+                                <!--<div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                            <div><a href="#" class="dropdown-item  ">Link 3</a></div>-->
+
+                            </div>
+                        </div>
+
+                    </button>
+                </div>
+
+                <div class="o-dropdown dropdown o-dropdown--no-caret "><button class="dropdown-toggle  "
+                        title="Reporting" data-hotkey="undefined" data-menu-xmlid="stock.menu_warehouse_report">
+                        <div class="dropdown1"><span data-section="121">Reporting</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="#" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button></div>
+                <div class="o-dropdown dropdown o-dropdown--no-caret "><button class="dropdown-toggle  "
+                        title="Configuration" data-hotkey="undefined"
+                        data-menu-xmlid="stock.menu_stock_config_settings">
+                        <div class="dropdown1"><span data-section="110">Configuration</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="#" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button></div>
+            </div>
+        </nav>
+    </header>
+    <div class="o_action_manager">
+        <div class="o_action o_view_controller">
+            <div data-command-category="actions" class="o_control_panel">
+                <div class="o_cp_top">
+                    <div class="o_cp_top_left">
+                        <ol role="navigation" class="breadcrumb">
+                            <li accesskey="b" title="Previous menu" class="breadcrumb-item o_back_button"><a
+                                    href="#">Items</a></li>
+                            <li class="breadcrumb-item active"><span class="text-muted">New</span></li>
+                        </ol>
+                    </div>
+                    <div class="o_cp_top_right">
+                        <div role="search" class="o_cp_searchview"></div>
+                    </div>
+                </div>
+                <div class="o_cp_bottom">
+                    <div class="o_cp_bottom_left">
+                        <div role="toolbar" aria-label="Control panel buttons" class="o_cp_buttons">
+                            <div>
+                                <div class="o_form_buttons_view o_hidden" role="toolbar" aria-label="Main actions">
+                                    <button type="button" class="btn btn-primary o_form_button_edit" title="Edit record"
+                                        accesskey="a">
+                                        Edit
+                                    </button>
+                                    <button type="button" class="btn btn-secondary o_form_button_create"
+                                        title="Create record" accesskey="c">
+                                        Create
+                                    </button>
+                                </div>
+                                <div class="o_form_buttons_edit" role="toolbar" aria-label="Main actions"
+                                    data-original-title="" title="">
+                                    <button type="button" class="btn btn-primary o_form_button_save" title="Save record"
+                                        accesskey="s">
+                                        Save
+                                    </button>
+                                    <button type="button" class="btn btn-secondary o_form_button_cancel"
+                                        title="Discard record" accesskey="j">
+
+                                        <a href="productPage">Discard</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o_cp_bottom_right">
+                        <div role="search" class="btn-group o_search_options position-static"></div>
+                        <div role="search" class="o_cp_pager"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="o_content">
+                <div class="o_form_view o_form_editable">
+                    <div class="o_form_sheet_bg" data-command-category="app">
+                        <div class="o_form_statusbar">
+                            <div class="o_statusbar_buttons"><button type="button" name="action_open_label_layout"
+                                    class="btn btn-secondary"><span>Print Labels</span></button>
+                                <button type="button" name="action_update_quantity_on_hand" class="btn btn-secondary"
+                                    onClick="popUpQuatityForm()">
+                                    <span>Update
+                                        Quantity</span></button>
+                                <div class="o_dialog_container modal-open" id="myForm" style="display: none;">
+                                    <div class="o_dialog">
+                                        <div role="dialog" tabindex="-1" class="modal o_technical_modal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <header class="modal-header">
+                                                        <h4 class="modal-title">Change Product Quantity</h4><button
+                                                            type="button" aria-label="Close" tabindex="-1" class="close"
+                                                            onClick="popDownQuatityForm()">×</button>
+                                                    </header>
+                                                    <main class="modal-body o_act_window">
+                                                        <div class="o_action o_view_controller">
+                                                            <div class="o_content">
+                                                                <div class="o_form_view o_form_nosheet o_form_editable">
+                                                                    <table class="o_group o_inner_group">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"><label
+                                                                                        class="o_form_label o_required_modifier"
+                                                                                        for="o_field_input_76"
+                                                                                        data-original-title=""
+                                                                                        title="">New Quantity on
+                                                                                        Hand</label></td>
+                                                                                <td style="width: 100%;"><input
+                                                                                        class="o_field_float o_field_number o_field_widget o_quick_editable o_input o_required_modifier"
+                                                                                        name="new_quantity"
+                                                                                        placeholder="0.0000000000000"
+                                                                                        type="text" autocomplete="off"
+                                                                                        id="o_field_input_76"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </main>
+                                                    <footer class="modal-footer">
+                                                        <div>
+                                                            <footer><button type="button" name="change_product_qty"
+                                                                    class="btn btn-primary" data-hotkey="q"
+                                                                    onClick="popDownQuatityForm()"><span>Apply</span></button><button
+                                                                    type="button" class="btn btn-secondary"
+                                                                    special="cancel" data-hotkey="z"
+                                                                    onClick="popDownQuatityForm()"><span>Cancel</span></button>
+                                                            </footer>
+                                                        </div>
+                                                    </footer>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" name="210" context="{'default_product_tmpl_id': id}"
+                                    class="btn btn-secondary"><span>Replenish</span></button>
+                            </div>
+                        </div>
+                        <div class="clearfix position-relative o_form_sheet">
+                            <div class="o_not_full oe_button_box"><button type="button"
+                                    name="action_view_stock_move_lines" class="btn oe_stat_button"><i
+                                        class="fa fa-fw o_button_icon fa-exchange"></i>
+                                    <div class="o_field_widget o_stat_info mr4"><span
+                                            class="o_stat_text">In:</span><span class="o_stat_text">Out:</span></div>
+                                    <div class="o_field_widget o_stat_info"><span class="o_stat_value"><span
+                                                class="o_field_integer o_field_number o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="nbr_moves_in" data-original-title="" title="">0</span></span><span
+                                            class="o_stat_value"><span
+                                                class="o_field_integer o_field_number o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="nbr_moves_out" data-original-title="" title="">0</span></span>
+                                    </div>
+                                </button><button type="button" name="action_view_orderpoints"
+                                    class="btn oe_stat_button"><i class="fa fa-fw o_button_icon fa-refresh"></i>
+                                    <div name="nbr_reordering_rules"
+                                        class="o_field_widget o_stat_info o_readonly_modifier" data-original-title=""
+                                        title="">
+                                        <span class="o_stat_value">0</span>
+                                        <span class="o_stat_text">Reordering Rules</span>
+                                    </div>
+                                </button><button type="button" class="btn oe_stat_button o_invisible_modifier"
+                                    name="open_pricelist_rules" invisible="1"><i
+                                        class="fa fa-fw o_button_icon fa-list-ul"></i>
+                                    <div class="o_field_widget o_stat_info"><span class="o_stat_value"><span
+                                                class="o_field_integer o_field_number o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="pricelist_item_count" data-original-title=""
+                                                title="">0</span></span><span
+                                            attrs="{'invisible': [('pricelist_item_count', '=', 1)]}">
+                                            Extra Prices
+                                        </span><span attrs="{'invisible': [('pricelist_item_count', '!=', 1)]}"
+                                            class="o_invisible_modifier">
+                                            Extra Price
+                                        </span></div>
+                                </button><button type="button" name="140"
+                                    class="btn oe_stat_button o_invisible_modifier" invisible="1"><i
+                                        class="fa fa-fw o_button_icon fa-sitemap"></i>
+                                    <div name="product_variant_count"
+                                        class="o_field_widget o_stat_info o_readonly_modifier" data-original-title=""
+                                        title="">
+                                        <span class="o_stat_value">0</span>
+                                        <span class="o_stat_text">Variants</span>
+                                    </div>
+                                </button><button type="button" name="action_open_quants"
+                                    class="btn oe_stat_button o_invisible_modifier"><i
+                                        class="fa fa-fw o_button_icon fa-cubes"></i>
+                                    <div class="o_field_widget o_stat_info"><span class="o_stat_value"
+                                            widget="statinfo">
+                                            <div name="qty_available"
+                                                class="o_field_widget o_stat_info o_readonly_modifier mr4"
+                                                data-original-title="" title="">
+                                                <span class="o_stat_value">0.00</span>
+                                                <span class="o_stat_text"></span>
+                                            </div><span
+                                                class="o_field_char o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="uom_name" data-original-title="" title="">Units</span>
+                                        </span><span class="o_stat_text">On Hand</span></div>
+                                </button><button type="button" name="action_product_tmpl_forecast_report"
+                                    context="{'default_product_tmpl_id': id}"
+                                    class="btn oe_stat_button o_invisible_modifier"><i
+                                        class="fa fa-fw o_button_icon fa-cubes"></i>
+                                    <div class="o_field_widget o_stat_info"><span class="o_stat_value">
+                                            <div name="virtual_available"
+                                                class="o_field_widget o_stat_info o_readonly_modifier mr4"
+                                                data-original-title="" title="">
+                                                <span class="o_stat_value">0.00</span>
+                                                <span class="o_stat_text"></span>
+                                            </div><span
+                                                class="o_field_char o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="uom_name" data-original-title="" title="">Units</span>
+                                        </span><span class="o_stat_text">Forecasted</span></div>
+                                </button><button type="button" name="action_view_orderpoints"
+                                    class="btn oe_stat_button o_invisible_modifier"><i
+                                        class="fa fa-fw o_button_icon fa-refresh"></i>
+                                    <div class="o_field_widget o_stat_info mr4"><span
+                                            class="o_stat_text">Min:</span><span class="o_stat_text">Max:</span></div>
+                                    <div class="o_field_widget o_stat_info"><span class="o_stat_value"><span
+                                                class="o_field_float o_field_number o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="reordering_min_qty" data-original-title=""
+                                                title="">0.00</span></span><span class="o_stat_value"><span
+                                                class="o_field_float o_field_number o_field_widget o_quick_editable o_readonly_modifier"
+                                                name="reordering_max_qty" data-original-title=""
+                                                title="">0.00</span></span></div>
+                                </button><button type="button" name="action_open_product_lot"
+                                    class="btn oe_stat_button o_invisible_modifier" invisible="1"><i
+                                        class="fa fa-fw o_button_icon fa-bars"></i><span>Lot/Serial
+                                        Numbers</span></button><button type="button"
+                                    name="action_view_related_putaway_rules"
+                                    class="btn oe_stat_button o_invisible_modifier"
+                                    context="{                                 'invisible_handle': True,                                 'single_product': product_variant_count == 1,                             }"
+                                    invisible="1"><i class="fa fa-fw o_button_icon fa-random"></i><span>Putaway
+                                        Rules</span></button><button type="button"
+                                    name="action_view_storage_category_capacity"
+                                    class="btn oe_stat_button o_invisible_modifier" invisible="1"><i
+                                        class="fa fa-fw o_button_icon fa-cubes"></i><span>Storage
+                                        Capacities</span></button></div>
+                            <div class="ribbon ribbon-top-right o_invisible_modifier o_widget">
+                                <span class="bg-danger">
+                                    Archived
+                                </span>
+                            </div>
+                            <div class="o_field_image o_field_widget oe_avatar" aria-atomic="true" name="image_1920"
+                                data-original-title="" title="">
+                                <%= image_tag("itemImage.png", :alt => "Product image",:class =>"img img-fluid",:size => "66*66") %>
+                                <!--<img class="img img-fluid" alt="Binary file"
+                                    src="assets\images\itemImage.png"  name="imageItem">-->
+                                <div class="o_form_image_controls">
+                                    <button class="fa fa-pencil fa-lg float-left o_select_file_button" title="Edit"
+                                        aria-label="Edit">edit</button>
+                                    <button class="fa fa-trash-o fa-lg float-right o_clear_file_button" title="Clear"
+                                        aria-label="Clear">clear</button>
+
+                                    <span class="o_form_binary_progress">Uploading...</span>
+
+                                    <div class="o_hidden_input_file " aria-atomic="true">
+                                        <form class="o_form_binary_form" method="post" enctype="multipart/form-data"
+                                            action="/web/binary/upload">
+                                            <input type="hidden" name="csrf_token"
+                                                value="686e179cc77e08c087e27dcc44862986aeddb2e1o1679782610">
+                                            <input type="hidden" name="callback">
+                                            <input type="file" class="o_input_file" name="ufile" accept="image/*">
+
+
+
+                                        </form>
+                                        <iframe style="display: none"></iframe>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="oe_title"><label class="o_form_label" for="o_field_input_10"
+                                    data-original-title="" title="">Item Name</label>
+                                <h1>
+                                    <div class="d-flex">
+                                        <div role="radiogroup" class="o_priority o_field_widget mr-3" name="priority"
+                                            aria-label="Favorite" data-original-title="" title=""><a href="#"
+                                                role="radio" aria-checked="false" title="Favorite: Favorite"
+                                                aria-label="Favorite: Favorite" tabindex="0" data-index="1"
+                                                class="o_priority_star fa fa-star-o" id="o_field_input_51"></a></div>
+                                        <input
+                                            class="o_field_char o_field_widget o_quick_editable o_input o_field_translate o_required_modifier o_text_overflow"
+                                            name="name" placeholder="e.g. Cheese Burger" type="text" autocomplete="on"
+                                            id="o_field_input_10">
+                                    </div>
+                                </h1>
+                            </div>
+                            <style>
+                                div[name="options"] .o_field_boolean {
+                                    margin-left: 10px;
+                                    margin-right: 0px;
+                                }
+                            </style>
+                            <div name="options"><span class="d-inline-block">
+                                    <div class="o_field_boolean o_field_widget o_quick_editable custom-control custom-checkbox"
+                                        name="sale_ok"><input type="checkbox" id="o_field_input_11"
+                                            class="custom-control-input"><label for="o_field_input_11"
+                                            class="custom-control-label">​</label></div><label class="o_form_label"
+                                        for="o_field_input_11" data-original-title="" title="">Can be Sold</label>
+                                </span><span class="d-inline-block">
+                                    <div class="o_field_boolean o_field_widget o_quick_editable custom-control custom-checkbox"
+                                        name="purchase_ok"><input type="checkbox" id="o_field_input_12"
+                                            class="custom-control-input"><label for="o_field_input_12"
+                                            class="custom-control-label">​</label></div><label class="o_form_label"
+                                        for="o_field_input_12" data-original-title="" title="">Can be Purchased</label>
+                                </span></div>
+                            <div class="o_notebook" data-name="_default_">
+                                <div class="o_notebook_headers">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item"><a data-toggle="tab" disable_anchor="true"
+                                                href="#notebook_page_13" class="nav-link active" role="tab">General
+                                                Information</a></li>
+                                        <li class="nav-item o_invisible_modifier"><a data-toggle="tab"
+                                                disable_anchor="true" href="#notebook_page_23" class="nav-link"
+                                                role="tab">Attributes &amp; Variants</a></li>
+                                        <li class="nav-item o_invisible_modifier"><a data-toggle="tab"
+                                                disable_anchor="true" href="#notebook_page_24" class="nav-link"
+                                                role="tab">Sales</a></li>
+                                        <li class="nav-item o_invisible_modifier"><a data-toggle="tab"
+                                                disable_anchor="true" href="#notebook_page_25" class="nav-link"
+                                                role="tab">Purchase</a></li>
+                                        <li class="nav-item"><a data-toggle="tab" disable_anchor="true"
+                                                href="#notebook_page_26" class="nav-link" role="tab">Inventory</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="notebook_page_13">
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label
+                                                                class="o_form_label o_required_modifier"
+                                                                for="o_field_input_14" data-original-title=""
+                                                                title="">Product </label></td>
+                                                        <td style="width: 100%;">
+                                                            <select
+                                                                class="o_input o_field_widget o_quick_editable o_required_modifier"
+                                                                name="detailed_type" id="o_field_input_14">
+                                                                <option value="false" style="display: none"></option>
+                                                                <option value="&quot;consu&quot;" style="">Consumable
+                                                                </option>
+                                                                <option value="&quot;service&quot;" style="">Service
+                                                                </option>
+                                                                <option value="&quot;product&quot;" style="">Storable
+                                                                    Product</option>
+                                                                <option value="&quot;product&quot;" style="">Other Type
+                                                                
+                                                                    <button type="button" name="action_update_quantity_on_hand" class="btn btn-secondary"
+                                    onClick="popUpQuatityForm()">
+                                    <span>Other Type</span></button>
+                                <div class="o_dialog_container modal-open" id="myForm" style="display: none;">
+                                    <div class="o_dialog">
+                                        <div role="dialog" tabindex="-1" class="modal o_technical_modal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <header class="modal-header">
+                                                        <h4 class="modal-title">Change Product Quantity</h4><button
+                                                            type="button" aria-label="Close" tabindex="-1" class="close"
+                                                            onClick="popDownQuatityForm()">×</button>
+                                                    </header>
+                                                    <main class="modal-body o_act_window">
+                                                        <div class="o_action o_view_controller">
+                                                            <div class="o_content">
+                                                                <div class="o_form_view o_form_nosheet o_form_editable">
+                                                                    <table class="o_group o_inner_group">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"></td>
+                                                                                <td style="width: 100%;"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="o_td_label"><label
+                                                                                        class="o_form_label o_required_modifier"
+                                                                                        for="o_field_input_76"
+                                                                                        data-original-title=""
+                                                                                        title="">New Quantity on
+                                                                                        Hand</label></td>
+                                                                                <td style="width: 100%;"><input
+                                                                                        class="o_field_float o_field_number o_field_widget o_quick_editable o_input o_required_modifier"
+                                                                                        name="new_quantity"
+                                                                                        placeholder="0.0000000000000"
+                                                                                        type="text" autocomplete="off"
+                                                                                        id="o_field_input_76"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </main>
+                                                    <footer class="modal-footer">
+                                                        <div>
+                                                            <footer><button type="button" name="change_product_qty"
+                                                                    class="btn btn-primary" data-hotkey="q"
+                                                                    onClick="popDownQuatityForm()"><span>Apply</span></button><button
+                                                                    type="button" class="btn btn-secondary"
+                                                                    special="cancel" data-hotkey="z"
+                                                                    onClick="popDownQuatityForm()"><span>Cancel</span></button>
+                                                            </footer>
+                                                        </div>
+                                                    </footer>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                                               
+
+
+                                                                </option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label
+                                                                class="o_form_label o_readonly_modifier"
+                                                                for="o_field_input_15" data-original-title=""
+                                                                title=""></label></td>
+                                                        <td style="width: 100%;"><span
+                                                                class="o_field_char o_field_widget o_quick_editable o_readonly_modifier font-italic text-muted"
+                                                                name="product_tooltip">Storable products are physical
+                                                                items for which you manage the inventory level.</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label mt-1"
+                                                                for="o_field_input_16" data-original-title=""
+                                                                title="">Sales Price</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div name="pricing">
+                                                                <div class="o_field_monetary o_field_number o_input o_field_widget o_quick_editable oe_inline"
+                                                                    name="list_price"><input class="o_input"
+                                                                        placeholder="" type="text" autocomplete="off"
+                                                                        id="o_field_input_16"><span>E£</span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_17" data-original-title=""
+                                                                title="">Cost</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div name="standard_price_uom"
+                                                                attrs="{'invisible': [('product_variant_count', '>', 1), ('is_product_variant', '=', False)]}"
+                                                                class="o_row">
+                                                                <div class="o_field_monetary o_field_number o_input o_field_widget o_quick_editable"
+                                                                    name="standard_price"><input class="o_input"
+                                                                        placeholder="" type="text" autocomplete="off"
+                                                                        id="o_field_input_17"></div><span
+                                                                    class="oe_read_only o_invisible_modifier"
+                                                                    invisible="1">per
+                                                                    <span
+                                                                        class="o_field_char o_field_widget o_quick_editable o_readonly_modifier"
+                                                                        name="uom_name" data-original-title=""
+                                                                        title="">Units</span></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label
+                                                                class="o_form_label o_required_modifier"
+                                                                for="o_field_input_18" data-original-title=""
+                                                                title="">Category </label></td>
+                                                        
+                                                        <td style="width: 100%;">
+                                                            <select
+                                                                class="o_input o_field_widget o_quick_editable o_required_modifier"
+                                                                name="detailed_type" id="o_field_input_14">
+                                                                <option value="false" style="display: none"></option>
+                                                                <option value="&quot;consu&quot;" style="">Consumable
+                                                                </option>
+                                                                <option value="&quot;service&quot;" style="">Service
+                                                                </option>
+                                                                <option value="&quot;product&quot;" style="">Storable
+                                                                    Product</option>
+                                                            </select>
+                                                        </td>
+
+
+                                                        <!--<td style="width: 100%;">
+                                                            <div class="o_field_widget o_field_many2one o_quick_editable o_with_button o_required_modifier"
+                                                                aria-atomic="true" name="categ_id">
+                                                                <div class="o_field_many2one_selection">
+                                                                    <div class="o_input_dropdown">
+                                                                        <input type="text"
+                                                                            class="o_input ui-autocomplete-input"
+                                                                            autocomplete="off" id="o_field_input_18">
+                                                                        <a role="button" class="o_dropdown_button"
+                                                                            draggable="false"></a>
+                                                                    </div>
+                                                                    <button type="button"
+                                                                        class="fa fa-external-link btn btn-secondary o_external_button"
+                                                                        tabindex="-1" draggable="false"
+                                                                        aria-label="External link"
+                                                                        title="External link"></button>
+                                                                </div>
+                                                                <div class="o_field_many2one_extra"></div>
+                                                            </div>
+                                                        </td>-->
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_19" data-original-title=""
+                                                                title="">Internal Reference</label></td>
+                                                        <td style="width: 100%;"><input
+                                                                class="o_field_char o_field_widget o_quick_editable o_input"
+                                                                name="default_code"
+                                                                placeholder="Add any note you want ;)" type="text"
+                                                                autocomplete="off" id="o_field_input_19"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_20" data-original-title=""
+                                                                title="">Barcode</label></td>
+                                                        <td style="width: 100%;"><input
+                                                                class="o_field_char o_field_widget o_quick_editable o_input"
+                                                                name="barcode" placeholder="" type="text"
+                                                                autocomplete="off" id="o_field_input_20"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_21" data-original-title=""
+                                                                title="">Product Tags</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_many2manytags o_input o_field_widget"
+                                                                name="product_tag_ids">
+
+                                                                <div class="o_field_widget o_field_many2one o_quick_editable"
+                                                                    aria-atomic="true" name="product_tag_ids">
+                                                                    <div class="o_field_many2one_selection">
+                                                                        <div class="o_input_dropdown">
+                                                                            <input type="text"
+                                                                                class="o_input ui-autocomplete-input"
+                                                                                autocomplete="off"
+                                                                                id="o_field_input_21">
+                                                                            <a role="button" class="o_dropdown_button"
+                                                                                draggable="false"></a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="o_field_many2one_extra"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"></td>
+                                                        <td style="width: 100%;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <table class="o_group o_inner_group">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" style="width: 100%;">
+                                                        <div class="o_horizontal_separator">Internal Notes</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 50%;">
+                                                        <input
+                                                            class="oe_form_field oe_form_field_html o_field_widget o_quick_editable"
+                                                            name="description"
+                                                            placeholder="Add any note you want ;):) ."
+                                                            data-original-title="" title="">
+                                                        <div class="oe-collaboration-selections-container"></div>
+                                                        <!--<div class="note-editable odoo-editor-editable"
+                                                                contenteditable="true" id="o_field_input_62">
+                                                                
+                                                            </div>-->
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="notebook_page_23">
+                                        <div class="o_field_one2many o_field_widget o_quick_editable o_field_x2many o_field_x2many_list"
+                                            name="attribute_line_ids" id="o_field_input_60" data-original-title=""
+                                            title="">
+                                            <div class="o_x2m_control_panel">
+                                                <div role="toolbar" aria-label="Control panel buttons"
+                                                    class="o_cp_buttons"></div>
+                                                <div role="search" class="o_cp_pager"></div>
+                                            </div>
+                                            <div class="o_list_view o_list_optional_columns">
+                                                <div class="table-responsive">
+                                                    <table
+                                                        class="o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_empty_list">
+                                                        <thead>
+                                                            <tr>
+                                                                <th data-name="attribute_id" tabindex="-1"
+                                                                    class="o_column_sortable" title="Attribute">
+                                                                    Attribute</th>
+                                                                <th data-name="value_ids" class="o_many2many_tags_cell"
+                                                                    tabindex="-1" title="Values">Values</th>
+                                                                <th data-name="button_group_0" class="o_list_button">
+                                                                </th>
+                                                                <th class="o_list_record_remove_header"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="ui-sortable">
+                                                            <tr>
+                                                                <td colspan="4" class="o_field_x2many_list_row_add"><a
+                                                                        href="#" role="button">Add a line</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4">&nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tfoot><i
+                                                            class="o_optional_columns_dropdown_toggle fa fa-ellipsis-v"></i>
+                                                    </table>
+                                                </div>
+                                                <div class="o_optional_columns text-center dropdown"><a
+                                                        class="dropdown-toggle text-dark o-no-caret" href="#"
+                                                        role="button" data-toggle="dropdown" data-display="static"
+                                                        aria-expanded="false" aria-label="Optional columns"></a>
+                                                    <div class="dropdown-menu o_optional_columns_dropdown dropdown-menu-right"
+                                                        role="menu"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="oe_grey oe_edit_only"><strong>Warning</strong>: adding or deleting
+                                            attributes
+                                            will delete and recreate existing variants and lead
+                                            to the loss of their possible customizations.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane" id="notebook_page_24">
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Upsell &amp; Cross-Sell
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Sales Description</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 50%;"><textarea
+                                                                class="o_field_text o_field_translate o_field_widget o_quick_editable o_input"
+                                                                name="description_sale"
+                                                                placeholder="This note is added to sales orders and invoices."
+                                                                type="text" autocomplete="off" id="o_field_input_53"
+                                                                style="overflow-y: hidden; height: 50px; resize: none;"
+                                                                data-original-title="" title=""></textarea><textarea
+                                                                disabled=""
+                                                                style="position: absolute; opacity: 0; height: 10px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px; overflow: hidden; top: -10000px; left: -10000px; width: 0px;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="notebook_page_25">
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Vendor Bills</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="notebook_page_26">
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Operations</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_27" data-original-title=""
+                                                                title="">Routes</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div>
+                                                                <div aria-atomic="true" name="route_ids"
+                                                                    class="o_field_widget o_quick_editable o_invisible_modifier mb-0"
+                                                                    id="o_field_input_27">
+                                                                    <div aria-atomic="true">
+
+                                                                    </div>
+                                                                </div><button type="button"
+                                                                    id="stock.view_diagram_button" name="216"
+                                                                    class="btn btn btn-link pt-0"
+                                                                    context="{'default_product_tmpl_id': id}"><i
+                                                                        class="fa fa-fw o_button_icon fa-arrow-right"></i><span>View
+                                                                        Diagram</span></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label
+                                                                class="o_form_label o_invisible_modifier o_readonly_modifier"
+                                                                for="o_field_input_28" data-original-title=""
+                                                                title="">Category Routes</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_many2manytags o_field_widget o_quick_editable o_invisible_modifier o_readonly_modifier"
+                                                                name="route_from_categ_ids">
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Logistics</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_29" data-original-title=""
+                                                                title="">Responsible</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_widget o_field_many2one o_field_many2one_avatar o_quick_editable o_with_button"
+                                                                aria-atomic="true" name="responsible_id">
+                                                                <div class="o_field_many2one_selection">
+                                                                    <div class="o_m2o_avatar">
+                                                                        <img src="/web/image/res.users/2/avatar_128"
+                                                                            alt="Afnan Mousa">
+
+                                                                    </div>
+
+                                                                    <div class="o_input_dropdown">
+                                                                        <input type="text"
+                                                                            class="o_input ui-autocomplete-input"
+                                                                            autocomplete="off" id="o_field_input_29">
+                                                                        <a role="button" class="o_dropdown_button"
+                                                                            draggable="false"></a>
+                                                                    </div>
+                                                                    <button type="button"
+                                                                        class="fa fa-external-link btn btn-secondary o_external_button"
+                                                                        tabindex="-1" draggable="false"
+                                                                        aria-label="External link"
+                                                                        title="External link"></button>
+                                                                </div>
+                                                                <div class="o_field_many2one_extra"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_30" data-original-title=""
+                                                                title="">Weight</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_row" name="weight"
+                                                                attrs="{'invisible':[('product_variant_count', '>', 1), ('is_product_variant', '=', False)]}">
+                                                                <input
+                                                                    class="o_field_float o_field_number o_field_widget o_quick_editable o_input"
+                                                                    name="weight" placeholder="" type="text"
+                                                                    autocomplete="off" id="o_field_input_30"><span><span
+                                                                        class="o_field_char o_field_widget o_quick_editable o_readonly_modifier"
+                                                                        name="weight_uom_name" data-original-title=""
+                                                                        title=""></span></span></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_31" data-original-title=""
+                                                                title="">Volume</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_row" name="volume"
+                                                                attrs="{'invisible':[('product_variant_count', '>', 1), ('is_product_variant', '=', False)]}">
+                                                                <input
+                                                                    class="o_field_float o_field_number o_field_widget o_quick_editable o_input"
+                                                                    name="volume" placeholder="" type="text"
+                                                                    autocomplete="off" id="o_field_input_31"><span><span
+                                                                        class="o_field_char o_field_widget o_quick_editable o_readonly_modifier"
+                                                                        name="volume_uom_name" data-original-title=""
+                                                                        title=""></span></span></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_32" data-original-title=""
+                                                                title="">Customer Lead Time</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div attrs="{'invisible': [('sale_ok', '=', False)]}"><input
+                                                                    class="o_field_float o_field_number o_field_widget o_quick_editable o_input oe_inline"
+                                                                    name="sale_delay" placeholder="" type="text"
+                                                                    autocomplete="off" style="vertical-align:baseline"
+                                                                    id="o_field_input_32"> days
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_invisible_modifier o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Traceability</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label
+                                                                class="o_form_label o_required_modifier"
+                                                                for="o_field_input_34" data-original-title=""
+                                                                title="">Tracking</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_radio o_vertical o_field_widget o_quick_editable o_required_modifier"
+                                                                name="tracking" role="radiogroup" aria-label="Tracking"
+                                                                id="o_field_input_34">
+                                                                <div class="custom-control custom-radio o_radio_item"
+                                                                    aria-atomic="true">
+                                                                    <input type="radio"
+                                                                        class="custom-control-input o_radio_input"
+                                                                        name="radio33" data-value="serial"
+                                                                        data-index="0" id="radio33_serial">
+                                                                    <label class="custom-control-label o_form_label"
+                                                                        for="radio33_serial">By Unique Serial
+                                                                        Number</label>
+                                                                </div>
+
+                                                                <div class="custom-control custom-radio o_radio_item"
+                                                                    aria-atomic="true">
+                                                                    <input type="radio"
+                                                                        class="custom-control-input o_radio_input"
+                                                                        name="radio33" data-value="lot" data-index="1"
+                                                                        id="radio33_lot">
+                                                                    <label class="custom-control-label o_form_label"
+                                                                        for="radio33_lot">By Lots</label>
+                                                                </div>
+
+                                                                <div class="custom-control custom-radio o_radio_item"
+                                                                    aria-atomic="true">
+                                                                    <input type="radio"
+                                                                        class="custom-control-input o_radio_input"
+                                                                        checked="true" name="radio33" data-value="none"
+                                                                        data-index="2" id="radio33_none">
+                                                                    <label class="custom-control-label o_form_label"
+                                                                        for="radio33_none">No Tracking</label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_invisible_modifier o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Counterpart Locations
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_35" data-original-title=""
+                                                                title="">Production Location</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_widget o_field_many2one o_quick_editable o_with_button"
+                                                                aria-atomic="true" name="property_stock_production">
+                                                                <div class="o_field_many2one_selection">
+                                                                    <div class="o_input_dropdown">
+                                                                        <input type="text"
+                                                                            class="o_input ui-autocomplete-input"
+                                                                            autocomplete="off" id="o_field_input_35">
+                                                                        <a role="button" class="o_dropdown_button"
+                                                                            draggable="false"></a>
+                                                                    </div>
+                                                                    <button type="button"
+                                                                        class="fa fa-external-link btn btn-secondary o_external_button"
+                                                                        tabindex="-1" draggable="false"
+                                                                        aria-label="External link"
+                                                                        title="External link"></button>
+                                                                </div>
+                                                                <div class="o_field_many2one_extra"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="o_td_label"><label class="o_form_label"
+                                                                for="o_field_input_36" data-original-title=""
+                                                                title="">Inventory Location</label></td>
+                                                        <td style="width: 100%;">
+                                                            <div class="o_field_widget o_field_many2one o_quick_editable o_with_button"
+                                                                aria-atomic="true" name="property_stock_inventory">
+                                                                <div class="o_field_many2one_selection">
+                                                                    <div class="o_input_dropdown">
+                                                                        <input type="text"
+                                                                            class="o_input ui-autocomplete-input"
+                                                                            autocomplete="off" id="o_field_input_36">
+                                                                        <a role="button" class="o_dropdown_button"
+                                                                            draggable="false"></a>
+                                                                    </div>
+                                                                    <button type="button"
+                                                                        class="fa fa-external-link btn btn-secondary o_external_button"
+                                                                        tabindex="-1" draggable="false"
+                                                                        aria-label="External link"
+                                                                        title="External link"></button>
+                                                                </div>
+                                                                <div class="o_field_many2one_extra"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <table class="o_group o_inner_group o_invisible_modifier">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" style="width: 100%;">
+                                                        <div class="o_horizontal_separator">Packaging</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 50%;">
+                                                        <div class="o_field_one2many o_field_widget o_quick_editable o_field_x2many o_field_x2many_list"
+                                                            name="packaging_ids" id="o_field_input_61"
+                                                            data-original-title="" title="">
+                                                            <div class="o_x2m_control_panel">
+                                                                <div role="toolbar" aria-label="Control panel buttons"
+                                                                    class="o_cp_buttons"></div>
+                                                                <div role="search" class="o_cp_pager"></div>
+                                                            </div>
+                                                            <div class="o_list_view o_list_optional_columns">
+                                                                <div class="table-responsive">
+                                                                    <table
+                                                                        class="o_list_table table table-sm table-hover table-striped o_list_table_ungrouped o_empty_list">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th data-name="sequence"
+                                                                                    class="o_handle_cell o_column_sortable o_list_number_th"
+                                                                                    tabindex="-1" title=""></th>
+                                                                                <th data-name="name" tabindex="-1"
+                                                                                    class="o_column_sortable"
+                                                                                    title="Packaging">Packaging</th>
+                                                                                <th data-name="qty" tabindex="-1"
+                                                                                    class="o_column_sortable o_list_number_th"
+                                                                                    title="Contained Quantity">Contained
+                                                                                    Quantity</th>
+                                                                                <th class="o_list_record_remove_header">
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="ui-sortable">
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td colspan="3"
+                                                                                    class="o_field_x2many_list_row_add">
+                                                                                    <a href="#" role="button">Add a
+                                                                                        line</a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="4">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="4">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="4">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tfoot><i
+                                                                            class="o_optional_columns_dropdown_toggle fa fa-ellipsis-v"></i>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="o_optional_columns text-center dropdown"><a
+                                                                        class="dropdown-toggle text-dark o-no-caret"
+                                                                        href="#" role="button" data-toggle="dropdown"
+                                                                        data-display="static" aria-expanded="false"
+                                                                        aria-label="Optional columns"></a>
+                                                                    <div class="dropdown-menu o_optional_columns_dropdown dropdown-menu-right"
+                                                                        role="menu">
+                                                                        <div class="dropdown-item">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" id="checkbox-59"
+                                                                                    class="custom-control-input"
+                                                                                    name="barcode"
+                                                                                    role="menuitemcheckbox"><label
+                                                                                    for="checkbox-59"
+                                                                                    class="custom-control-label">Barcode</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="o_group">
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Description for Receipts
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 50%;"><textarea
+                                                                class="o_field_text o_field_translate o_field_widget o_quick_editable o_input"
+                                                                name="description_pickingin"
+                                                                placeholder="This note is added to receipt orders (e.g. where to store the product in the warehouse)."
+                                                                type="text" autocomplete="off" id="o_field_input_56"
+                                                                style="overflow-y: hidden; height: 50px; resize: none;"
+                                                                data-original-title="" title=""></textarea><textarea
+                                                                disabled=""
+                                                                style="position: absolute; opacity: 0; height: 10px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px; overflow: hidden; top: -10000px; left: -10000px; width: 0px;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Description for Delivery
+                                                                Orders</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 50%;"><textarea
+                                                                class="o_field_text o_field_translate o_field_widget o_quick_editable o_input"
+                                                                name="description_pickingout"
+                                                                placeholder="This note is added to delivery orders."
+                                                                type="text" autocomplete="off" id="o_field_input_57"
+                                                                style="overflow-y: hidden; height: 50px; resize: none;"
+                                                                data-original-title="" title=""></textarea><textarea
+                                                                disabled=""
+                                                                style="position: absolute; opacity: 0; height: 10px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px; overflow: hidden; top: -10000px; left: -10000px; width: 0px;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="o_group o_inner_group o_invisible_modifier o_group_col_6">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2" style="width: 100%;">
+                                                            <div class="o_horizontal_separator">Description for Internal
+                                                                Transfers</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 50%;"><textarea
+                                                                class="o_field_text o_field_translate o_field_widget o_quick_editable o_input"
+                                                                name="description_picking"
+                                                                placeholder="This note is added to internal transfer orders (e.g. where to pick the product in the warehouse)."
+                                                                type="text" autocomplete="off" id="o_field_input_58"
+                                                                style="overflow-y: hidden; height: 50px; resize: none;"
+                                                                data-original-title="" title=""></textarea><textarea
+                                                                disabled=""
+                                                                style="position: absolute; opacity: 0; height: 10px; border-top-width: 0px; border-bottom-width: 0px; padding: 0px; overflow: hidden; top: -10000px; left: -10000px; width: 0px;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o_FormRenderer_chatterContainer">
+                        <div class="o_ChatterContainer" data-command-category="mail">
+                            <div class="o_Chatter ">
+                                <div class="o_Chatter_fixedPanel">
+                                    <div class="o_ChatterTopbar o_Chatter_topbar">
+                                        <div class="o_ChatterTopbar_actions"><button type="button" disabled=""
+                                                title="Send a message" data-hotkey="m"
+                                                class="btn btn-link o_ChatterTopbar_button o_ChatterTopbar_buttonSendMessage o-bordered">
+                                                Send message </button><button type="button" disabled=""
+                                                title="Log a note" data-hotkey="shift+m"
+                                                class="btn btn-link o_ChatterTopbar_button o_ChatterTopbar_buttonLogNote o-bordered">
+                                                Log note </button><button type="button" disabled=""
+                                                title="Schedule an activity" data-hotkey="shift+a"
+                                                class="btn btn-link o_ChatterTopbar_button o_ChatterTopbar_buttonScheduleActivity"><i
+                                                    class="fa fa-clock-o"></i> Schedule activity </button>
+                                            <div class="o-autogrow"></div>
+                                            <div class="o_ChatterTopbar_rightSection"><button type="button" disabled=""
+                                                    class="btn btn-link o_ChatterTopbar_button o_ChatterTopbar_buttonAttachments"><i
+                                                        class="fa fa-paperclip"></i><span
+                                                        class="o_ChatterTopbar_buttonCount o_ChatterTopbar_buttonAttachmentsCount">0</span></button>
+                                                <div
+                                                    class="o_FollowButton o_ChatterTopbar_button o_ChatterTopbar_followButton">
+                                                    <button disabled="" class="o_FollowButton_follow btn btn-link">
+                                                        Follow </button></div>
+                                                <div
+                                                    class="o_FollowerListMenu o_ChatterTopbar_button o_ChatterTopbar_followerListMenu">
+                                                    <div class="o_FollowerListMenu_followers"><button disabled=""
+                                                            title="Show Followers"
+                                                            class="o_FollowerListMenu_buttonFollowers btn btn-link"><i
+                                                                class="fa fa-user"></i><span
+                                                                class="o_FollowerListMenu_buttonFollowersCount pl-1">0</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o_Chatter_scrollPanel">
+                                    <div class="o_ThreadView o_Chatter_thread"
+                                        data-thread-local-id="Thread(model:product.template, id:-1)">
+                                        <div class="o_ThreadView_bottomPart d-flex flex-grow-1">
+                                            <div class="o_ThreadView_core d-flex flex-column flex-grow-1">
+                                                <div class="o_MessageList o_ThreadView_messageList">
+                                                    <div
+                                                        class="o_MessageList_separator o_MessageList_separatorDate o_MessageList_item pt-4">
+                                                        <hr class="o_MessageList_separatorLine"><span
+                                                            class="o_MessageList_separatorLabel o_MessageList_separatorLabelDate">Today</span>
+                                                        <hr class="o_MessageList_separatorLine">
+                                                    </div>
+                                                    <div class="o_Message position-relative pt-1 o_MessageList_item o_MessageList_message o-not-discussion mt-3"
+                                                        data-message-local-id="Message(id:-1)">
+                                                        <div class="d-flex flex-shrink-0">
+                                                            <div class="o_Message_highlightIndicator"></div>
+                                                            <div class="o_Message_sidebar">
+                                                                <div
+                                                                    class="o_Message_authorAvatarContainer o_Message_sidebarItem">
+                                                                    <img src="/web/image/res.partner/3/avatar_128"
+                                                                        title="Open chat" alt="Avatar"
+                                                                        class="o_Message_authorAvatar rounded-circle o_Message_authorRedirect o_redirect"><span
+                                                                        class="o_PartnerImStatusIcon fa-stack o_Message_partnerImStatusIcon o-has-open-chat o-online"
+                                                                        data-partner-local-id="Partner(id:3)"><i
+                                                                            class="o_PartnerImStatusIcon_outerBackground fa fa-circle fa-stack-1x"></i><i
+                                                                            class="o_PartnerImStatusIcon_innerBackground fa fa-circle fa-stack-1x"></i><i
+                                                                            title="Online" role="img"
+                                                                            aria-label="User is online"
+                                                                            class="o_PartnerImStatusIcon_icon o-online fa fa-circle fa-stack-1x"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="o_Message_core flex-grow-1">
+                                                                <div class="o_Message_header ml-2">
+                                                                    <div title="Open profile"
+                                                                        class="o_Message_authorName o_Message_authorRedirect o_redirect text-truncate">
+                                                                        Afnan Mousa</div>
+                                                                </div>
+                                                                <div class="o_Message_content mx-2">
+                                                                    <div class="o_Message_prettyBody">Creating a new
+                                                                        record...</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function popUpQuatityForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function popDownQuatityForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

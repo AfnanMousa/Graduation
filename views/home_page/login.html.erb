@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" data-website-id="1" data-main-object="ir.ui.view(2341,)" data-oe-company-name="Odoo S.A."
+    data-add2cart-redirect="1">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title> Login </title>
+</head>
+
+<body class="">
+    <div id="wrapwrap" class="    o_login ">
+        <header id="top" data-anchor="true" data-name="Header"
+            class="  o_no_autohide_menu o_affix_enabled o_header_fixed o_main_header o_not_editable">
+            <div class="o_main_header_main" id="top_menu">
+
+
+
+                <a href="#" role="button" class="o_mobile_menu_toggle o_no_ripple d-inline-block d-md-none">
+                    <i class="fa fa-bars" focusable="false"></i><span class="sr-only">Menu</span>
+                </a>
+                <div class="o_header_buttons">
+                    <a href="/shop/cart" aria-label="Shopping Cart" class="o_wsale_my_cart d-none">
+                        <i class="fa fa-shopping-cart"></i><sup class="my_cart_quantity badge badge-primary"></sup>
+                    </a>
+
+        </header>
+        <main>
+            <div class="d-flex justify-content-center">
+                <div class="oe_website_login_container flex-grow-1 card mt-5 shadow" style="max-width: 350px;">
+                    <span class="o_logo d-block mx-auto mb8 mt32"></span>
+                    <div class="card-body">
+                        <div class="alert alert-info text-center">
+                            <p>You can access and manage your Inventory from this account.</p>
+                        </div>
+                        <form class="oe_login_form o_odoo_enterprise_sign" role="form" method="post"
+                            onsubmit="this.action = &#39;/web/login&#39; + location.hash" action="/web/login">
+                            <input type="hidden" name="csrf_token"
+                                value="ed5dda96688d43b16ea0f0d362d48e1a21b22d87o1678714356" />
+                            <div class="form-group field-login">
+                                <label for="login">Email</label>
+                                <input type="text" placeholder="Email" name="login" id="login" required="required"
+                                    autofocus="autofocus" autocapitalize="off" class="form-control " />
+                            </div>
+                            <div class="form-group field-password odoo-password-reveal">
+                                <label for="password" class="col-form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="password" class="form-control" required="required"
+                                        name="password" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button"
+                                            style="background-color: #017e84;border-color: #017e84;">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix oe_login_buttons text-center mb-1 pt-3">
+                                <button type="submit" class="btn btn-primary float-left">Sign in</button>
+                                <div class="justify-content-between mt-2 d-flex small">
+                                    <%= link_to "Don't have an account?", home_page_signUp_path %>
+                                    <%= link_to "Reset Password", home_page_resetPassword_path %>
+                                </div>
+                                <div class="o_login_auth"></div>
+                            </div>
+                            <input type="hidden" name="redirect" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Inventory Overview</title>
+    <script src="https://kit.fontawesome.com/9889287a30.js" crossorigin="anonymous"></script>
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="o_web_client">
+
+    <header>
+        <nav data-command-category="navbar" class="o_main_navbar"
+            style="background-color: #626774;border-color: #626774;"><a href="#" accesskey="h"
+                class="fa-solid fa-table-cells" title="Home menu" aria-label="Home menu"></a><a href="#menu_id=108"
+                class="dropdown-item o_menu_brand" data-section="108"
+                data-menu-xmlid="stock.menu_stock_root">Inventory</a>
+            <div role="menu" class="o_menu_sections">
+                <a href="#menu_id=137" title="Overview" data-hotkey="1" class="dropdown-item o_nav_entry"
+                    data-section="137" data-menu-xmlid="stock.stock_picking_type_menu">Overview</a>
+
+                <div class="o-dropdown dropdown o-dropdown--no-caret">
+                    <button class="dropdown-toggle  " title="Operations" data-hotkey="2"
+                        data-menu-xmlid="stock.menu_stock_warehouse_mgmt">
+                        <div class="dropdown1">
+                            <span data-section="109">Operations</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="login" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="o-dropdown dropdown o-dropdown--no-caret">
+                    <button class="dropdown-toggle  " title="Products" data-hotkey="3"
+                        data-menu-xmlid="stock.menu_stock_inventory_control">
+                        <div class="dropdown1">
+                            <span data-section="120">Products</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="productPage" class=" focus dropdown-item ">Product Page</a></div>
+                                <!--<div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                            <div><a href="#" class="dropdown-item  ">Link 3</a></div>-->
+
+                            </div>
+                        </div>
+
+                    </button>
+                </div>
+
+                <div class="o-dropdown dropdown o-dropdown--no-caret "><button class="dropdown-toggle  "
+                        title="Reporting" data-hotkey="undefined" data-menu-xmlid="stock.menu_warehouse_report">
+                        <div class="dropdown1"><span data-section="121">Reporting</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="#" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button></div>
+                <div class="o-dropdown dropdown o-dropdown--no-caret "><button class="dropdown-toggle  "
+                        title="Configuration" data-hotkey="undefined"
+                        data-menu-xmlid="stock.menu_stock_config_settings">
+                        <div class="dropdown1"><span data-section="110">Configuration</span>
+                            <div class="dropdown-content" style="text-align: left;">
+                                <!-- style = "list-style-type: none; "-->
+                                <div><a href="#" class=" focus dropdown-item ">Link 1</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 2</a></div>
+                                <div><a href="#" class="dropdown-item  ">Link 3</a></div>
+
+                            </div>
+                        </div>
+                    </button></div>
+            </div>
+        </nav>
+    </header>
+    <div class="o_action_manager">
+        <div class="o_action o_view_controller o_view_sample_data">
+            <div data-command-category="actions" class="o_control_panel">
+                <div class="o_cp_top">
+                    <div class="o_cp_top_left">
+                        <ol role="navigation" class="breadcrumb">
+                            <li class="breadcrumb-item active"><span class="text-900">Products</span></li>
+                        </ol>
+                    </div>
+                    <div class="o_cp_top_right">
+                        <div role="search" class="o_cp_searchview">
+                            <div role="search" aria-autocomplete="list" class="o_searchview"><i title="Search..."
+                                    role="img" aria-label="Search..." class="o_searchview_icon fa fa-search"></i>
+                                <div class="o_searchview_input_container">
+                                    <div tabindex="0" role="img" aria-label="search" class="o_searchview_facet"><span
+                                            class="o_searchview_facet_label fa fa-filter"></span>
+                                        <div class="o_facet_values"><span class="o_facet_value">Products</span></div><i
+                                            role="img" aria-label="Remove" title="Remove"
+                                            class="fa fa-sm fa-remove o_facet_remove"></i>
+                                    </div><input type="text" autofocus="" accesskey="Q" placeholder="Search..."
+                                        role="searchbox" title="Search for records" class="o_searchview_input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="o_cp_bottom">
+                    <div class="o_cp_bottom_left">
+                        <div role="toolbar" aria-label="Control panel buttons" class="o_cp_buttons">
+                            <div>
+                                <button type="button" class="btn btn-primary o-kanban-button-new" title="Create record"
+                                    accesskey="c">
+                                    <!--Create-->
+
+                                    <a href="addProduct" class="btn btn-primary o-kanban-button-new">Create</a>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o_cp_bottom_right">
+                        <div role="search" class="btn-group o_search_options position-static">
+                            <div class="o-dropdown dropdown o-dropdown--no-caret o_filter_menu btn-group"><button
+                                    class="dropdown-toggle btn btn-light "><i class="small mr-1 fa fa-filter"></i><span
+                                        class="o_dropdown_title">Filters</span></button></div>
+                            <div class="o-dropdown dropdown o-dropdown--no-caret o_group_by_menu btn-group"><button
+                                    class="dropdown-toggle btn btn-light "><i class="small mr-1 fa fa-bars"></i><span
+                                        class="o_dropdown_title">Group By</span></button></div>
+                            <div class="o-dropdown dropdown o-dropdown--no-caret o_favorite_menu btn-group"><button
+                                    class="dropdown-toggle btn btn-light "><i class="small mr-1 fa fa-star"></i><span
+                                        class="o_dropdown_title">Favorites</span></button></div>
+                        </div>
+                        <div role="search" class="o_cp_pager"></div>
+                        <nav role="toolbar" aria-label="View switcher" class="btn-group o_cp_switch_buttons"><button
+                                type="button" class="btn btn-light fa fa-lg o_switch_view o_kanban fa-th-large active"
+                                aria-label="View kanban" data-tooltip="Kanban" tabindex="-1"></button><button
+                                type="button" class="btn btn-light fa fa-lg o_switch_view o_list fa-list-ul"
+                                aria-label="View list" data-tooltip="List" tabindex="-1"></button></nav>
+                    </div>
+                </div>
+            </div>
+            <div class="o_content">
+                <div class="o_kanban_view o_kanban_ungrouped">
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=1&amp;unique=03222022052721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0001</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">4.26</span>
+                            </div>
+                            <div modifiers="{}">On hand: <span>30.92</span> <span>Volutpat blandit</span></div>
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=2&amp;unique=04062022122721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0002</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">79.25</span>
+                            </div>
+                            <div modifiers="{}">On hand: <span>64.48</span> <span>Viverra nam</span></div>
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=3&amp;unique=03142022092721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0003</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">69.28</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=4&amp;unique=04262022002721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0004</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="true"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">96.55</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=5&amp;unique=04022022182721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0005</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="true"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">66.22</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=6&amp;unique=04102022162721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0006</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="true"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">72.32</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=7&amp;unique=04082022062721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0007</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">6.26</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=8&amp;unique=03162022022721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0008</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">17.55</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=9&amp;unique=03102022012721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0009</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="false"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star-o"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">56.22</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="oe_kanban_card oe_kanban_global_click o_kanban_record o_sample_data_disabled"
+                        modifiers="{}" tabindex="-1" role="article">
+                        <div class="o_kanban_image mr-1" modifiers="{}">
+                            <img src="https://student52.odoo.com/web/image?model=product.template&amp;field=image_128&amp;id=10&amp;unique=03112022022721"
+                                alt="Product" class="o_image_64_contain" modifiers="{}">
+                        </div>
+                        <div class="oe_kanban_details" modifiers="{}">
+                            <div class="o_kanban_record_top mb-0" modifiers="{}">
+                                <div class="o_kanban_record_headings" modifiers="{}">
+                                    <strong class="o_kanban_record_title" modifiers="{}">
+                                        <span>REF0010</span>
+                                    </strong>
+                                </div>
+                                <div role="radiogroup" class="o_priority o_field_widget" name="priority"
+                                    aria-label="Favorite"><a href="#" role="radio" aria-checked="true"
+                                        title="Favorite: Favorite" aria-label="Favorite: Favorite" tabindex="-1"
+                                        data-index="1" class="o_priority_star fa fa-star"></a></div>
+                            </div>
+
+
+                            <div name="product_lst_price" class="mt-1" modifiers="{}">
+                                Price: <span class="o_field_monetary o_field_number o_field_widget o_quick_editable"
+                                    name="list_price">61.24</span>
+                            </div>
+                            <div modifiers="{}">On hand: <span>16.12</span> <span>Integer vitae</span></div>
+                        </div>
+                    </div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_kanban_record o_kanban_ghost o_sample_data_disabled" tabindex="-1"></div>
+                    <div class="o_view_nocontent">
+                        <div class="o_nocontent_help">
+                            <p class="o_view_nocontent_smiling_face">
+                                No product found. Let's create one!
+                            </p>
+                            <p>
+                                Make storable items to keep track of your supply levels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
